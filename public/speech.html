@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gym Speech Progress</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Gym Speech Progress</h1>
+      <nav>
+        <a href="speech.html">Speech</a>
+        <a href="progress.html">Progress</a>
+        <a href="profile.html">User Profile</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <button onclick="showDropdown()">Update Progress</button>
+        <div id="dropdown" style="display:none;">
+          <form>
+            <table id="myTable">
+              <tr>
+                <td colspan="4"></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      function showDropdown() {
+        var dropdown = document.getElementById("dropdown");
+        if (dropdown.style.display === "none") {
+          dropdown.style.display = "block";
+        } else {
+          dropdown.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
